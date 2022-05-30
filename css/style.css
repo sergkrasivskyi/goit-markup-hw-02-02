@@ -1,0 +1,214 @@
+@charset "UTF-8";
+body {
+  /* Главная */
+  position: relative;
+  width: 1600px;
+  height: 2349px;
+  background: #FFFFFF;
+  border: 2px dashed red;
+}
+
+ul {
+  list-style: none;
+}
+
+#hiddenh2 {
+  opacity: 0;
+}
+
+.title-bar {
+  /* top line bg */
+  position: absolute;
+  width: 1600px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
+  border: 1px dashed red;
+}
+
+.title-bar__companyname {
+  /* WebStudio */
+  position: absolute;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 24px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+}
+.title-bar__companyname a {
+  text-decoration: none;
+}
+.title-bar__companyname span {
+  color: #2196F3;
+}
+
+.title-bar__nav-menu {
+  /* Menu Nav */
+  position: absolute;
+  width: 294px;
+  height: 16px;
+  left: 453px;
+  top: 32px;
+  border: 1px dashed red;
+}
+.title-bar__nav-menu #studio {
+  /* Студия */
+  position: absolute;
+  width: 49px;
+  height: 16px;
+  left: 0px;
+  top: 0px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+.title-bar__nav-menu #portfolio {
+  /* Портфолио */
+  position: absolute;
+  width: 77px;
+  height: 16px;
+  left: 99px;
+  top: 0px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.title-bar__nav-menu #contacts {
+  /* Контакты */
+  position: absolute;
+  width: 68px;
+  height: 16px;
+  left: 226px;
+  top: 0px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.title-bar__info {
+  position: absolute;
+  width: 307px;
+  height: 16px;
+  left: 1078px;
+  top: 32px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  border: 1px dashed red;
+}
+.title-bar__info #companymail {
+  /* info@devstudio.com */
+  position: absolute;
+  width: 135px;
+  height: 16px;
+  left: 0px;
+  top: 0px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+.title-bar__info #companytel {
+  /* +38 096 111 11 11 */
+  position: absolute;
+  width: 122px;
+  height: 16px;
+  left: 185px;
+  top: 0px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.hero {
+  /* Bg */
+  position: absolute;
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  background: #2F303A;
+}
+.hero h1 {
+  /* Эффективные решения для вашего бизнеса */
+  position: absolute;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 200px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  /* or 136% */
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.hero #buttonhero {
+  /* bg */
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 350px;
+  background: #2196F3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  /* Заказать услугу */
+}
+.hero #buttonhero span {
+  position: absolute;
+  width: 136px;
+  height: 30px;
+  left: 0;
+  top: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}

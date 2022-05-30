@@ -5,29 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студія</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <a href="">WebStudio</a>
-      <nav>
-        <ul>
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Портфолио</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+      <div class="title-bar">
+        <div class="title-bar__companyname">
+          <a href=""><span>Web</span>Studio</a>
+        </div>
+        <nav>
+          <div class="title-bar__nav-menu">
+            <ul>
+              <li><a id="studio" href="#">Студия</a></li>
+              <li><a id="portfolio" href="#">Портфолио</a></li>
+              <li><a id="contacts" href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="title-bar__info">
+          <ul>
+            <li>
+              <a id="companymail" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a id="companytel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <!-- block Hero start -->
-      <h1>Эффективные решения для вашего бизнеса</h1>
-      <button type="button">Заказать услугу</button>
+      <div class="hero">
+        <h1>Эффективные решения для вашего бизнеса</h1>
+        <button id="buttonhero" type="button"><span>Заказать услугу</span></button>
+      </div>
       <!-- block Hero end -->
       <section>
-        <h2>Наши преимущества</h2>
+        <h2 id="hiddenh2">Наши преимущества</h2>
         <ul>
           <li>
             <h3>Внимание к деталям</h3>
@@ -112,11 +129,13 @@
       </section>
     </main>
     <footer>
+      <a href="">WebStudio</a>
       <address>
-        <a href="">WebStudio</a> <br />
-        <a href="">г. Киев, пр-т Леси Украинки, 26</a> 
-        <a href="mailto:info@example.com">info@example.com</a><br/>
-        <a href="tel:+380961111111">+38 096 111 11 11</a><br />
+        <ul>
+          <li><a href="">г. Киев, пр-т Леси Украинки, 26</a></li>
+          <li><a href="mailto:info@example.com">info@example.com</a></li>
+          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
       </address>
     </footer>
   </body>
