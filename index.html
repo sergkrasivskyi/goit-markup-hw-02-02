@@ -8,133 +8,150 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <div class="title-bar">
-        <div class="title-bar__companyname">
-          <a href=""><span>Web</span>Studio</a>
-        </div>
-        <nav>
-          <div class="title-bar__nav-menu">
-            <ul>
-              <li><a id="studio" href="#">Студия</a></li>
-              <li><a id="portfolio" href="#">Портфолио</a></li>
-              <li><a id="contacts" href="#">Контакты</a></li>
-            </ul>
-          </div>
-        </nav>
-        <div class="title-bar__info">
-          <ul>
-            <li>
-              <a id="companymail" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+    <header class="title-bar">
+          <a class="title-bar__companyname" href=""><span>Web</span>Studio</a>
+        <nav class="title-bar__menu">
+          <ul class="menu__items ">
+            <li class="menu__item">
+              <a href="#">Студия</a>
             </li>
-            <li>
-              <a id="companytel" href="tel:+380961111111">+38 096 111 11 11</a>
+            <li class="menu__item">
+              <a href="#">Портфолио</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">Контакты</a>
             </li>
           </ul>
-        </div>
-      </div>
+        </nav>
+        <ul class="title-bar__info">
+          <li class="info__mail">
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="info__tel">
+              <a href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
     </header>
     <main>
       <!-- block Hero start -->
       <div class="hero">
-        <h1>Эффективные решения для вашего бизнеса</h1>
-        <button id="buttonhero" type="button"><span>Заказать услугу</span></button>
+        <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+        <button class="hero__button" type="button">Заказать услугу</button>
       </div>
       <!-- block Hero end -->
       <section>
-        <h2 id="hiddenh2">Наши преимущества</h2>
-        <ul>
-          <li>
-            <h3>Внимание к деталям</h3>
-            <p>
+        <h2 class="hiddenh2">Наши преимущества</h2>
+        <ul class="features">
+          <li class="features__element feaure">
+            <h3 class="feature__title">Внимание к деталям</h3>
+            <p class="feature__about">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
-            <h3>Пунктуальность</h3>
-            <p>
+          <li class="features__element feaure">
+            <h3 class="feature__title">Пунктуальность</h3>
+            <p class="feature__about">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
-            <h3>Планирование</h3>
-            <p>
+          <li class="features__element feaure">
+            <h3 class="feature__title">Планирование</h3>
+            <p class="feature__about">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li>
-            <h3>Современные технологии</h3>
-            <p>
+          <li class="features__element feaure">
+            <h3 class="feature__title">Современные технологии</h3>
+            <p class="feature__about">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Чем мы занимаемся</h2>
-        <ul>
-          <li>
-            <img src="./images/whatwedo1.jpg" alt="whatwedo1.jpg" width="370" />
+      <section class="whatarewedoing">
+        <h2 class="whatarewedoing__title">Чем мы занимаемся</h2>
+        <ul class="whatarewedoing__list to-do-list">
+
+          <li class="to-do-list__pict">
+              <img
+                src="./images/whatwedo1.jpg"
+                alt="whatwedo1.jpg"
+                width="370"
+              />
           </li>
-          <li>
-            <img src="./images/whatwedo2.jpg" alt="whatwedo2.jpg" width="370" />
+          <li class="to-do-list__pict">
+              <img
+                src="./images/whatwedo2.jpg"
+                alt="whatwedo2.jpg"
+                width="370"
+              />
           </li>
-          <li>
-            <img src="./images/whatwedo3.jpg" alt="whatwedo3.jpg" width="370" />
+          <li class="to-do-list__pict">
+              <img
+                src="./images/whatwedo3.jpg"
+                alt="whatwedo3.jpg"
+                width="370"
+              />
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Наша команда</h2>
-        <ul>
-          <li>
+      <section class="companyteam">
+        <h2 class="companyteam__title" >Наша команда</h2>
+        <ul class="companyteam__list">
+          <li class="companyteam__person person">
             <img
+              class="person__photo"
               src="./images/igordemianenko.jpg"
               alt="igordemianenko"
               width="270"
             />
-            <h4>Игорь Демьяненко</h4>
-            <p>Product Designer</p>
+            <h4 class="person__name">Игорь Демьяненко</h4>
+            <p class="person__job">Product Designer</p>
           </li>
-          <li>
-            <img src="./images/olgarepina.jpg" alt="olgarepina" width="270" />
-            <h4>Ольга Репина</h4>
-            <p>Frontend Developer</p>
-          </li>
-          <li>
+          <li class="companyteam__person person">
             <img
+              class="person__photo"
+              src="./images/olgarepina.jpg"
+              alt="olgarepina"
+              width="270"
+            />
+            <h4 class="person__name">Ольга Репина</h4>
+            <p class="person__job">Frontend Developer</p>
+          </li>
+          <li class="companyteam__person person">
+            <img
+              class="person__photo"
               src="./images/nikolaitarasov.jpg"
               alt="nikolaitarasov"
               width="270"
             />
-            <h4>Николай Тарасов</h4>
-            <p>Marketing</p>
+            <h4 class="person__name">Николай Тарасов</h4>
+            <p class="person__job">Marketing</p>
           </li>
-          <li>
+          <li class="companyteam__person person">
             <img
+              class="person__photo"
               src="./images/mikhailermakov.jpg"
               alt="mikhailermakov"
               width="270"
             />
-            <h4>Михаил Ермаков</h4>
-            <p>UI Designer</p>
+            <h4 class="person__name">Михаил Ермаков</h4>
+            <p class="person__job">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="">WebStudio</a>
-      <address>
+    <footer class="company-bottom">
+      <a class="companyname-bottom" href=""><span>Web</span>Studio</a>
+      <address class="addresscompany">
         <ul>
-          <li><a href="">г. Киев, пр-т Леси Украинки, 26</a></li>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="addresscompany__office"><a href="">г. Киев, пр-т Леси Украинки, 26</a></li>
+          <li class="addresscompany__mail"><a href="mailto:info@example.com">info@example.com</a></li>
+          <li class="addresscompany__tel"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </address>
     </footer>

@@ -4,128 +4,93 @@ body {
   position: relative;
   width: 1600px;
   height: 2349px;
+  margin: 50px;
   background: #FFFFFF;
   border: 2px dashed red;
+}
+
+.hiddenh2 {
+  display: none;
+}
+
+nav {
+  width: 294px;
+  height: 16px;
 }
 
 ul {
   list-style: none;
 }
 
-#hiddenh2 {
-  opacity: 0;
-}
-
 .title-bar {
-  /* top line bg */
-  position: absolute;
+  position: relative;
   width: 1600px;
   height: 80px;
   left: 0px;
   top: 0px;
+  margin: 0;
   background: #FFFFFF;
-  border: 1px dashed red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
-.title-bar__companyname {
-  /* WebStudio */
-  position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
+.title-bar .title-bar__companyname {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  /* identical to box height */
   letter-spacing: 0.03em;
-}
-.title-bar__companyname a {
   text-decoration: none;
 }
-.title-bar__companyname span {
+.title-bar .title-bar__companyname span {
   color: #2196F3;
 }
-
-.title-bar__nav-menu {
-  /* Menu Nav */
-  position: absolute;
+.title-bar .title-bar__menu {
   width: 294px;
   height: 16px;
-  left: 453px;
-  top: 32px;
-  border: 1px dashed red;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
 }
-.title-bar__nav-menu #studio {
-  /* Студия */
-  position: absolute;
-  width: 49px;
-  height: 16px;
-  left: 0px;
-  top: 0px;
-  font-family: "Roboto";
+
+.menu__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.menu__items .menu__item {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #2196F3;
-}
-.title-bar__nav-menu #portfolio {
-  /* Портфолио */
-  position: absolute;
-  width: 77px;
-  height: 16px;
-  left: 99px;
-  top: 0px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #212121;
-}
-.title-bar__nav-menu #contacts {
-  /* Контакты */
-  position: absolute;
-  width: 68px;
-  height: 16px;
-  left: 226px;
-  top: 0px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #212121;
 }
 
 .title-bar__info {
-  position: absolute;
+  margin: 0;
+  padding: 0;
   width: 307px;
   height: 16px;
-  left: 1078px;
-  top: 32px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #2196F3;
-  border: 1px dashed red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.title-bar__info #companymail {
-  /* info@devstudio.com */
-  position: absolute;
-  width: 135px;
-  height: 16px;
-  left: 0px;
-  top: 0px;
+.title-bar__info .info__mail {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -134,13 +99,7 @@ ul {
   letter-spacing: 0.02em;
   color: #2196F3;
 }
-.title-bar__info #companytel {
-  /* +38 096 111 11 11 */
-  position: absolute;
-  width: 122px;
-  height: 16px;
-  left: 185px;
-  top: 0px;
+.title-bar__info .info__tel {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -151,64 +110,229 @@ ul {
 }
 
 .hero {
-  /* Bg */
-  position: absolute;
+  position: relative;
   width: 1600px;
   height: 600px;
   left: 0px;
-  top: 80px;
+  top: 0px;
+  margin: 0 0 90px 0;
   background: #2F303A;
-}
-.hero h1 {
-  /* Эффективные решения для вашего бизнеса */
-  position: absolute;
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 200px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  /* or 136% */
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-.hero #buttonhero {
-  /* bg */
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 350px;
-  background: #2196F3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  /* Заказать услугу */
-}
-.hero #buttonhero span {
-  position: absolute;
-  width: 136px;
-  height: 30px;
-  left: 0;
-  top: 0;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 188% */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero .hero__title {
+  width: 696px;
+  height: 120px;
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.hero .hero__button {
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+  background: #2196F3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   text-align: center;
   letter-spacing: 0.06em;
   color: #FFFFFF;
+}
+
+.features {
+  position: relative;
+  width: 1170px;
+  height: 101px;
+  margin: 0 auto;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.features .features__element {
+  width: 270px;
+  height: 101px;
+}
+.features .feaure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+.features .feature__title {
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.features .feature__about {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.whatarewedoing {
+  position: relative;
+  margin: 90px auto 94px auto;
+  width: 1170px;
+  height: 386px;
+}
+.whatarewedoing .whatarewedoing__title {
+  padding: 0;
+  margin: 0 auto 50px auto;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.whatarewedoing .whatarewedoing__list {
+  margin: 0 0 94px 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.companyteam {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 1600px;
+  height: 648px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.companyteam .companyteam__title {
+  margin: 94px auto 50px auto;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.companyteam .companyteam__list {
+  width: 1170px;
+  height: 368px;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.companyteam .companyteam__list .companyteam__person {
+  position: relative;
+  width: 270px;
+  height: 368px;
+}
+.company-bottom {
+  position: relative;
+  width: 1600px;
+  height: 252px;
+  background: #2F303A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.company-bottom .companyname-bottom {
+  width: 145px;
+  height: 31px;
+  margin: 0 0 20px 0;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.company-bottom .companyname-bottom span {
+  color: #2196F3;
+}
+.company-bottom .addresscompany {
+  margin: 0;
+  padding: 0;
+  width: 231px;
+  height: 81px;
+}
+.company-bottom .addresscompany ul {
+  margin: 0;
+  padding: 0;
+}
+.company-bottom .addresscompany .addresscompany__office {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
 }
