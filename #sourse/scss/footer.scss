@@ -1,0 +1,87 @@
+.company-bottom {
+    position: relative;
+    padding: 0 216px 0 215px;
+    height: 252px;
+    background: #2F303A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.companyname-bottom {
+    width: 145px;
+    height: 31px;
+    margin: 0 0 20px 0;
+    font-family: 'Raleway'; // доделать
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: #FFFFFF;
+
+    span {
+        color: #2196F3;
+    }
+
+}
+
+.addresscompany {
+    margin: 0;
+    padding: 0;
+    width: 231px;
+    height: 81px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+
+
+    &__office > a{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        /* or 171% */
+
+        letter-spacing: 0.03em;
+
+        color: #FFFFFF;
+    }
+
+    &__mail > a {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        /* or 171% */
+
+        letter-spacing: 0.03em;
+
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &__tel > a {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        /* or 171% */
+
+        letter-spacing: 0.03em;
+
+        color: rgba(255, 255, 255, 0.6);
+
+    }
+}
