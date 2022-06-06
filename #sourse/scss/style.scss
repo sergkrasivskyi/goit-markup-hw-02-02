@@ -2,10 +2,9 @@
 @import "footer.scss";
 @import "portpholio.scss";
 body {
-    width: 1600px;
-    height: 2349px;
     margin: 50px;
-    background: #FFFFFF;
+    // background: #FFFFFF;
+    background: #E5E5E5;
 }
 
 nav {
@@ -24,11 +23,7 @@ a {
 }
 
 .hero {
-    position: relative;
-    width: 1600px;
     height: 600px;
-    left: 0px;
-    top: 0px;
     margin: 0 0 90px 0;
     background: #2F303A;
     display: flex;
@@ -37,8 +32,8 @@ a {
     justify-content: center;
 
     &__title {
-        width: 696px;
-        height: 120px;
+        // width: 696px;
+        // height: 120px;
         margin: 0;
         font-family: 'Roboto'; // доделать
         font-style: normal;
@@ -73,16 +68,17 @@ a {
 .hiddenh2 {
     display: none;
 }
-
+main{
+    background-color: white;
+}
 .features {
-    position: relative;
-    width: 1170px;
-    height: 101px;
+    // position: relative;
+    // width: 1170px;
+    // height: 101px;
     margin: 0 auto;
     padding: 0;
     display: flex;
     justify-content: space-between;
-
     &__element {
         width: 270px;
         height: 101px;
@@ -124,6 +120,7 @@ a {
     margin: 90px auto 94px auto;
     width: 1170px;
     height: 386px;
+    
 
 
     &__title {

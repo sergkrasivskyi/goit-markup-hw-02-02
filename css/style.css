@@ -263,7 +263,7 @@ body {
   width: 1600px;
   height: 2349px;
   margin: 50px;
-  background: #FFFFFF;
+  background: #E5E5E5;
 }
 
 nav {
@@ -338,6 +338,10 @@ a {
 
 .hiddenh2 {
   display: none;
+}
+
+main {
+  background-color: white;
 }
 
 .features {
